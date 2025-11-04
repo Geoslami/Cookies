@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Mikey's Cookies</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="cookies.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <h1><a href="index.html">Mikey's Cookies</a></h1>
+        </header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>Mikey's Life Story</li>
+                    <li><a href="order.html">Place an Order</a></li>
+                    <li><a href="cookies.html">Cookies</a></li>
+                </ul>
+            </nav>
+            <main>
+                <h3>Order</h3>
+                <form method="get" action="https://webdevbasics.net/scripts/demo.php">
+                    <label for="name">Name: </label>
+                    <input name="name" id="name" required="required"><br>
+                    <br>
+                    <table>
+                        <tr>
+                            <th>Types of Cookies</th>
+                            <th>How Many Batches</th>
+                        </tr>
+                        <tr class="buytable">
+                            <td><input type="checkbox" name="Chocolate Chip" id="cookie">Chocolate Chip Cookies</td>
+                            <td><input type="number" name="Chocolate Chip Count"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="Chocolate Chunk" id="cookie">Chocolate Chunk Cookies</td>
+                            <td><input type="number" name="Chocolate Chunk Count"></td>
+                        </tr>
+                        <tr class="buytable">
+                            <td><input type="checkbox" name="Sugar" id="cookie">Sugar Cookies</td>
+                            <td><input type="number" name="Sugar Count"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="Frosted" id="frosted">Frosted</td>
+                            <td rowspan="2"><textarea name="Requests" placeholder="Special Requests?"></textarea></td>
+                        </tr>
+                        <tr class="buytable">
+                            <td><input type="checkbox" name="Shpaed" id="shaped">Shaped</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="Double Chocolate" id="cookie">Double Chocolate Cookies</td>
+                            <td><input type="number" name="Double Chocolate Count"></td>
+                        </tr>
+                        <tr class="buytable">
+                            <td><input type="checkbox" name="Monster" id="cookie">Monster Cookies</td>
+                            <td><input type="number" name="Monster Count"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="Raisin" id="cookie">Raisin Cookies</td>
+                            <td><input type="number" name="Raisin Count"></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <fieldset>
+                        <legend>Billing Address</legend>
+                        <label>Street: <input type="text" name="street" id="street" size="80"></label><br><br>
+                        <label>City: <input type="text" name="city" id="city"></label>
+                        <label>State (if appliccable): <input type="text" name="state" id="state" maxlength="2" size="5"></label>
+                        <label>Country: <input type="text" name="country" id="country" maxlength="2" size="5"></label>
+                        <label>Zip: <input type="text" name="zip" id="zip" maxlength="5" size="5"></label>
+                    </fieldset>
+                    <br>
+                    <input type="submit"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="reset">
+                </form>
+            </main>
+            <footer>
+                <small><i>
+                    Copyright &copy; 2025 Mikey's Cookies<br>
+                    <a href="mailto:4800651021@davistech.edu">Mikey Wagner</a>
+                </i></small>
+            </footer>
+    </div>
+</body>
+</html>
